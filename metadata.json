@@ -1,0 +1,6 @@
+{
+  "name": "Year-End Team Night",
+  "description": "Year-End Team Night event page for Friday 12 December at the Office Rooftop, Level 12. Features countdown timer, timeline agenda, dress code tips, interactive FAQ, and RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

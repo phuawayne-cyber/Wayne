@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year-End Team Night | Office Rooftop Celebration</title>
+  <meta name="description" content="Join us for Year-End Team Night on Friday 12 December, 6:00 pm to 10:00 pm at Office rooftop, Level 12. Smart casual with a touch of gold. Agenda, dress code, FAQ & RSVP." />
+  <meta property="og:title" content="Year-End Team Night | Office Rooftop Celebration" />
+  <meta property="og:description" content="Friday 12 December, 6:00 pm to 10:00 pm at Office rooftop, Level 12. Agenda, dress code tips, FAQ, and RSVP." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* CSS Reset & Design Tokens */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-midnight: #070c18;
+      --bg-navy-dark: #0a1124;
+      --bg-navy-card: rgba(14, 23, 44, 0.78);
+      --bg-navy-elevated: rgba(22, 34, 62, 0.9);
+      
+      --gold-primary: #d4af37;
+      --gold-light: #f6e29f;
+      --gold-bright: #ffd700;
+      --gold-deep: #b38728;
+      --gold-glow: rgba(212, 175, 55, 0.28);
+      --gold-border: rgba(212, 175, 55, 0.22);
+      --gold-border-hover: rgba(246, 226, 159, 0.45);
+
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --text-soft: #cbd5e1;
+      --text-gold: #f3e1a8;
+
+      --font-display: 'Cinzel', serif, Georgia;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --nav-height: 72px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: var(--bg-midnight);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      background-image: 
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(212, 175, 55, 0.15), transparent 70%),
+        radial-gradient(circle at 10% 40%, rgba(25, 45, 84, 0.35), transparent 40%),
+        radial-gradient(circle at 90% 70%, rgba(180, 140, 40, 0.08), transparent 45%),
+        linear-gradient(180deg, #070c18 0%, #091226 50%, #060a14 100%);
+      background-attachment: fixed;
+    }
+
+    /* Ambient Gold Star Dust & Glow */
+    .ambient-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Typography */
+    h1, h2, h3, .brand-font {
+      font-family: var(--font-display);
+      letter-spacing: 0.03em;
+      text-wrap: balance;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #ffffff 0%, #fae8b4 30%, #d4af37 70%, #f6e29f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+
+    .section-kicker::before,
+    .section-kicker::after {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-primary));
+    }
+
+    .section-kicker::after {
+      background: linear-gradient(90deg, var(--gold-primary), transparent);
+    }
+
+    .section-title {
+      font-size: clamp(1.85rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      font-size: 1.0625rem;
+      color: var(--text-soft);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* Containers */
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 96px 0;
+      scroll-margin-top: calc(var(--nav-height) + 16px);
+      position: relative;
+    }
+
+    /* Sticky Navigation */
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      background: rgba(7, 12, 24, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--gold-border);
+      z-index: 1000;
+      transition: all 0.25s ease;
+    }
+
+    .sticky-nav.scrolled {
+      background: rgba(6, 10, 20, 0.96);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(212, 175, 55, 0.15);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-brand:hover {
+      opacity: 0.9;
+    }
+
+    .brand-spark {
+      color: var(--gold-primary);
+      display: inline-block;
+      font-size: 1.25rem;
+      line-height: 1;
+      filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.6));
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-soft);
+      text-decoration: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      position: relative;
+      padding: 6px 0;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--gold-light);
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--gold-primary);
+      transition: width 0.25s ease;
+      border-radius: 1px;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 20px;
+      background: linear-gradient(135deg, #d4af37 0%, #aa771c 100%);
+      color: #070c18;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.875rem;
+      letter-spacing: 0.03em;
+      border-radius: 6px;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+      border: 1px solid rgba(255, 235, 175, 0.4);
+      white-space: nowrap;
+    }
+
+    .nav-cta-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      background: linear-gradient(135deg, #f6e29f 0%, #d4af37 100%);
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--gold-border);
+      color: var(--text-main);
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      min-width: 44px;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+
+    .mobile-toggle:hover {
+      background: rgba(212, 175, 55, 0.1);
+      border-color: var(--gold-primary);
+    }
+
+    .mobile-drawer {
+      display: none;
+      position: absolute;
+      top: var(--nav-height);
+      left: 0;
+      width: 100%;
+      background: rgba(7, 12, 24, 0.98);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .mobile-drawer.open {
+      display: block;
+      animation: fadeInSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .mobile-menu-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .mobile-menu-links .nav-link {
+      font-size: 1.125rem;
+      padding: 10px 0;
+      display: block;
+    }
+
+    /* 1. HERO SECTION */
+    .hero-section {
+      min-height: calc(100vh - var(--nav-height));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 0 80px;
+      position: relative;
+    }
+
+    .hero-backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        linear-gradient(180deg, rgba(7, 12, 24, 0.65) 0%, rgba(7, 12, 24, 0.88) 70%, #070c18 100%),
+        url('/src/assets/images/rooftop_celebration_hero_1791186689377.jpg') center/cover no-repeat;
+      z-index: 0;
+      opacity: 0.42;
+      filter: saturate(1.1) brightness(0.9);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero-pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold-light);
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 6.5vw, 4.75rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-meta-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px 36px;
+      margin-bottom: 44px;
+      color: var(--text-soft);
+      font-size: clamp(1rem, 2vw, 1.15rem);
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+    }
+
+    .hero-meta-icon {
+      color: var(--gold-primary);
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.4));
+    }
+
+    /* COUNTDOWN TIMER */
+    .countdown-card {
+      background: rgba(14, 23, 44, 0.75);
+      border: 1px solid var(--gold-border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 175, 55, 0.08);
+      max-width: 680px;
+      margin: 0 auto 36px;
+      position: relative;
+    }
+
+    .countdown-label {
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--gold-light);
+      font-weight: 600;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .countdown-pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--gold-bright);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--gold-bright);
+      animation: pulse 1.8s infinite;
+    }
+
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .timer-unit {
+      background: rgba(8, 14, 28, 0.7);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      border-radius: 10px;
+      padding: 16px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .timer-unit:hover {
+      border-color: rgba(212, 175, 55, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .timer-num {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      text-shadow: 0 2px 15px rgba(212, 175, 55, 0.3);
+      margin-bottom: 6px;
+    }
+
+    .timer-text {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .btn-gold-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #e5c158 0%, #d4af37 50%, #b38728 100%);
+      color: #070c18;
+      text-decoration: none;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      padding: 14px 34px;
+      border-radius: 8px;
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+      border: 1px solid rgba(255, 245, 205, 0.5);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-gold-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.5);
+      background: linear-gradient(135deg, #fceda8 0%, #e5c158 50%, #c4962c 100%);
+    }
+
+    .btn-navy-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(14, 23, 44, 0.6);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.0625rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: 1px solid var(--gold-border);
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+
+    .btn-navy-outline:hover {
+      background: rgba(22, 34, 62, 0.85);
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    /* 2. AGENDA / TIMELINE SECTION */
+    .timeline-container {
+      position: relative;
+      max-width: 820px;
+      margin: 48px auto 0;
+      padding: 20px 0;
+    }
+
+    .timeline-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 110px;
+      width: 2px;
+      background: linear-gradient(180deg, 
+        rgba(212, 175, 55, 0.1) 0%, 
+        var(--gold-primary) 15%, 
+        var(--gold-primary) 85%, 
+        rgba(212, 175, 55, 0.1) 100%
+      );
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    }
+
+    .timeline-item {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 36px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-time-col {
+      width: 90px;
+      text-align: right;
+      padding-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .timeline-time {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1.3;
+    }
+
+    .timeline-marker {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #070c18;
+      border: 3px solid var(--gold-primary);
+      position: absolute;
+      left: 100px;
+      top: 3px;
+      box-shadow: 0 0 12px var(--gold-glow);
+      z-index: 2;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .timeline-item:hover .timeline-marker {
+      transform: scale(1.25);
+      background-color: var(--gold-primary);
+    }
+
+    .timeline-content-card {
+      margin-left: 42px;
+      background: var(--bg-navy-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 12px;
+      padding: 22px 24px;
+      flex-grow: 1;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .timeline-content-card:hover {
+      transform: translateX(4px);
+      border-color: var(--gold-border-hover);
+      background: var(--bg-navy-elevated);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 18px rgba(212, 175, 55, 0.12);
+    }
+
+    .timeline-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .timeline-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .timeline-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 2px 10px;
+      border-radius: 4px;
+    }
+
+    .timeline-desc {
+      color: var(--text-soft);
+      font-size: 0.9375rem;
+      line-height: 1.55;
+    }
+
+    /* 3. DRESS CODE & WHAT TO BRING */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .tip-card {
+      background: var(--bg-navy-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 14px;
+      padding: 32px 26px;
+      backdrop-filter: blur(12px);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .tip-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+      opacity: 0.7;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-border-hover);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(212, 175, 55, 0.15);
+    }
+
+    .tip-icon-wrap {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+    }
+
+    .tip-number {
+      font-family: var(--font-display);
+      font-size: 0.8125rem;
+      letter-spacing: 0.12em;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .tip-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .tip-text {
+      color: var(--text-soft);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    /* 4. FAQ SECTION */
+    .faq-container {
+      max-width: 780px;
+      margin: 48px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background: var(--bg-navy-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+
+    .faq-item:hover,
+    .faq-item.active {
+      border-color: var(--gold-border-hover);
+    }
+
+    .faq-item.active {
+      background: var(--bg-navy-elevated);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .faq-question-btn {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      color: #ffffff;
+      text-align: left;
+      font-family: var(--font-body);
+      font-size: 1.0625rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .faq-question-btn:hover {
+      color: var(--gold-light);
+    }
+
+    .faq-question-btn:focus-visible {
+      outline: 2px solid var(--gold-primary);
+      outline-offset: -2px;
+    }
+
+    .faq-chevron {
+      color: var(--gold-primary);
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg);
+      color: var(--gold-light);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+      opacity: 0;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 260px;
+      opacity: 1;
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 22px;
+      color: var(--text-soft);
+      font-size: 0.9375rem;
+      line-height: 1.65;
+      border-top: 1px solid rgba(212, 175, 55, 0.08);
+      padding-top: 14px;
+    }
+
+    /* 5. RSVP SECTION */
+    .rsvp-card {
+      background: linear-gradient(145deg, rgba(16, 27, 52, 0.9) 0%, rgba(9, 16, 32, 0.95) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 20px;
+      padding: 64px 32px;
+      text-align: center;
+      max-width: 840px;
+      margin: 0 auto;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(212, 175, 55, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .rsvp-card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(212, 175, 55, 0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .rsvp-headline {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .rsvp-subtext {
+      font-size: 1.0625rem;
+      color: var(--text-soft);
+      max-width: 580px;
+      margin: 0 auto 36px;
+    }
+
+    .btn-rsvp-huge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #f6e29f 0%, #d4af37 40%, #b38728 100%);
+      color: #070c18;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: clamp(1.125rem, 2.5vw, 1.35rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      padding: 20px 48px;
+      border-radius: 12px;
+      border: 2px solid #fff5cf;
+      box-shadow: 0 10px 35px rgba(212, 175, 55, 0.45);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .btn-rsvp-huge:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 16px 45px rgba(212, 175, 55, 0.6);
+      background: linear-gradient(135deg, #ffffff 0%, #f6e29f 40%, #d4af37 100%);
+    }
+
+    .rsvp-details-list {
+      margin-top: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px 32px;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .rsvp-detail-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rsvp-detail-item strong {
+      color: var(--gold-light);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--gold-border);
+      background: #050811;
+      padding: 40px 0 32px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-soft);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* Animations */
+    @keyframes fadeInSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
+    }
+
+    /* RESPONSIVE DESIGN (Works well on phone) */
+    @media (max-width: 900px) {
+      .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .timeline-container::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        flex-direction: column;
+        padding-left: 50px;
+      }
+
+      .timeline-time-col {
+        width: auto;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 6px;
+      }
+
+      .timeline-marker {
+        left: 10px;
+        top: 2px;
+      }
+
+      .timeline-content-card {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --nav-height: 64px;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .nav-menu, .nav-cta-btn {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: inline-flex;
+      }
+
+      .hero-section {
+        padding: 40px 0 60px;
+      }
+
+      .countdown-card {
+        padding: 20px 14px;
+      }
+
+      .countdown-grid {
+        gap: 8px;
+      }
+
+      .timer-unit {
+        padding: 12px 4px;
+      }
+
+      .timer-num {
+        font-size: 1.75rem;
+      }
+
+      .btn-rsvp-huge {
+        width: 100%;
+        padding: 16px 24px;
+      }
+
+      .rsvp-card {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- STICKY TOP MENU -->
+  <header id="navbar" class="sticky-nav">
+    <div class="container nav-container">
+      <!-- Brand Wordmark -->
+      <a href="#hero" class="nav-brand" aria-label="Year-End Team Night Home">
+        <span class="brand-spark" aria-hidden="true">&#10022;</span>
+        <span>Year-End Team Night</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#agenda" class="nav-link">Agenda</a></li>
+          <li><a href="#dress-code" class="nav-link">Dress Code</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#rsvp" class="nav-link">RSVP</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Button -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="#rsvp" class="nav-cta-btn">RSVP Form</a>
+        <!-- Mobile Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg id="hamburger-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg id="close-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-menu-links">
+        <li><a href="#hero" class="nav-link mobile-link">Home</a></li>
+        <li><a href="#agenda" class="nav-link mobile-link">Agenda</a></li>
+        <li><a href="#dress-code" class="nav-link mobile-link">Dress Code & Tips</a></li>
+        <li><a href="#faq" class="nav-link mobile-link">FAQ</a></li>
+        <li><a href="#rsvp" class="nav-link mobile-link">RSVP</a></li>
+      </ul>
+      <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--gold-border);">
+        <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn-gold-primary" style="width: 100%; text-align: center;">
+          Open RSVP Form
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-backdrop" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <div class="hero-pill-tag">
+        <span aria-hidden="true">&#10022;</span>
+        <span>Annual Company Celebration</span>
+        <span aria-hidden="true">&#10022;</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="gold-gradient-text">Year-End Team Night</span>
+      </h1>
+
+      <div class="hero-meta-grid">
+        <div class="hero-meta-item">
+          <!-- Calendar Icon -->
+          <svg class="hero-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Friday 12 December</span>
+        </div>
+
+        <div class="hero-meta-item">
+          <!-- Clock Icon -->
+          <svg class="hero-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>6:00 pm to 10:00 pm</span>
+        </div>
+
+        <div class="hero-meta-item">
+          <!-- Map Pin Icon -->
+          <svg class="hero-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Office rooftop, Level 12</span>
+        </div>
+      </div>
+
+      <!-- Live Countdown Card -->
+      <div class="countdown-card">
+        <div class="countdown-label">
+          <span class="countdown-pulse-dot" aria-hidden="true"></span>
+          <span>Countdown to Team Night</span>
+        </div>
+        <div class="countdown-grid" id="countdown-grid" aria-live="polite">
+          <div class="timer-unit">
+            <span class="timer-num" id="days-val">--</span>
+            <span class="timer-text">Days</span>
+          </div>
+          <div class="timer-unit">
+            <span class="timer-num" id="hours-val">--</span>
+            <span class="timer-text">Hours</span>
+          </div>
+          <div class="timer-unit">
+            <span class="timer-num" id="minutes-val">--</span>
+            <span class="timer-text">Minutes</span>
+          </div>
+          <div class="timer-unit">
+            <span class="timer-num" id="seconds-val">--</span>
+            <span class="timer-text">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions">
+        <a href="#rsvp" class="btn-gold-primary">
+          <span>Reserve Your Spot</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#agenda" class="btn-navy-outline">
+          <span>Explore Agenda</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: AGENDA TIMELINE -->
+  <section id="agenda">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-kicker">Evening Itinerary</div>
+        <h2 class="section-title">Timeline & Activities</h2>
+        <p class="section-subtitle">
+          An unforgettable four hours of camaraderie, rooftop dining, milestone celebrations, and high spirits under the stars.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- 6:00 PM: Welcome drinks -->
+        <div class="timeline-item">
+          <div class="timeline-time-col">
+            <div class="timeline-time">6:00 pm</div>
+          </div>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header-row">
+              <h3 class="timeline-title">
+                <span>Welcome Drinks & Sunset Toast</span>
+              </h3>
+              <span class="timeline-tag">Arrival</span>
+            </div>
+            <p class="timeline-desc">
+              Arrive at the rooftop as golden hour settles over the skyline. Enjoy signature craft cocktails, champagne, festive mocktails, and passed artisanal canapés.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6:45 PM: Dinner -->
+        <div class="timeline-item">
+          <div class="timeline-time-col">
+            <div class="timeline-time">6:45 pm</div>
+          </div>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header-row">
+              <h3 class="timeline-title">
+                <span>Rooftop Dinner Feast</span>
+              </h3>
+              <span class="timeline-tag">Dining</span>
+            </div>
+            <p class="timeline-desc">
+              A curated culinary buffet featuring chef carving stations, seasonal entrees, vibrant salads, and dietary-inclusive selections under the heated glass terrace.
+            </p>
+          </div>
+        </div>
+
+        <!-- 7:45 PM: Awards -->
+        <div class="timeline-item">
+          <div class="timeline-time-col">
+            <div class="timeline-time">7:45 pm</div>
+          </div>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header-row">
+              <h3 class="timeline-title">
+                <span>Annual Team Awards</span>
+              </h3>
+              <span class="timeline-tag">Ceremony</span>
+            </div>
+            <p class="timeline-desc">
+              Honoring peer-nominated champions, breakthrough project milestones, and culture heroes who elevated our team throughout the year.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8:30 PM: Games -->
+        <div class="timeline-item">
+          <div class="timeline-time-col">
+            <div class="timeline-time">8:30 pm</div>
+          </div>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header-row">
+              <h3 class="timeline-title">
+                <span>Team Games & Rooftop Trivia</span>
+              </h3>
+              <span class="timeline-tag">Entertainment</span>
+            </div>
+            <p class="timeline-desc">
+              Fast-paced interactive team trivia, music guessing rounds, and lighthearted rooftop games with grand prize giveaways for top performers.
+            </p>
+          </div>
+        </div>
+
+        <!-- 9:30 PM: Photo booth -->
+        <div class="timeline-item">
+          <div class="timeline-time-col">
+            <div class="timeline-time">9:30 pm</div>
+          </div>
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content-card">
+            <div class="timeline-header-row">
+              <h3 class="timeline-title">
+                <span>360° Photo Booth & Dessert Bar</span>
+              </h3>
+              <span class="timeline-tag">Celebration</span>
+            </div>
+            <p class="timeline-desc">
+              Step into the 360-degree slow-motion glam booth with gold confetti props, enjoy a decadent dessert buffet, and mingle with music until 10:00 pm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: DRESS CODE & WHAT TO BRING -->
+  <section id="dress-code" style="background: rgba(9, 15, 30, 0.55); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border);">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-kicker">Style Guide & Preparation</div>
+        <h2 class="section-title">Dress Code & What to Bring</h2>
+        <p class="section-subtitle">
+          Dress code: <strong>Smart casual, with a touch of gold</strong>. Here are three simple tips to get ready for the evening.
+        </p>
+      </div>
+
+      <div class="tips-grid">
+        <!-- Tip 1 -->
+        <div class="tip-card">
+          <div class="tip-icon-wrap" aria-hidden="true">
+            <!-- Sparkles / Star Icon -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"></path>
+            </svg>
+          </div>
+          <span class="tip-number">Tip 01</span>
+          <h3 class="tip-title">Smart Casual with a Touch of Gold</h3>
+          <p class="tip-text">
+            Polished blazers, tailored trousers, neat collared shirts, chic jumpsuits, or cocktail dresses. Add your signature touch of gold—a warm metallic watch, jewelry, tie, belt buckle, brooch, or shimmering footwear.
+          </p>
+        </div>
+
+        <!-- Tip 2 -->
+        <div class="tip-card">
+          <div class="tip-icon-wrap" aria-hidden="true">
+            <!-- Cloud / Wind / Jacket Icon -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+            </svg>
+          </div>
+          <span class="tip-number">Tip 02</span>
+          <h3 class="tip-title">Bring a Rooftop Evening Layer</h3>
+          <p class="tip-text">
+            While Level 12 features a sheltered, heated lounge pavilion, the open skyline deck gets a brisk night breeze after sundown. We recommend bringing a stylish blazer, wrap, shawl, or light jacket so you can comfortably enjoy the view.
+          </p>
+        </div>
+
+        <!-- Tip 3 -->
+        <div class="tip-card">
+          <div class="tip-icon-wrap" aria-hidden="true">
+            <!-- Smile / Heart / Celebration Icon -->
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <span class="tip-number">Tip 03</span>
+          <h3 class="tip-title">Just Your Festive Spirit</h3>
+          <p class="tip-text">
+            Leave your work laptops, notebooks, and stress at your desk! Food, beverages, entertainment, photo prints, and celebration gifts are entirely provided. Just bring your team spirit, appetite, and camaraderie.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: FAQ (4 ACCORDION QUESTIONS) -->
+  <section id="faq">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-kicker">Got Questions?</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about the evening, logistics, food, and venue access. Click any question below to expand.
+        </p>
+      </div>
+
+      <div class="faq-container" id="faq-accordion">
+        <!-- Question 1 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false" aria-controls="faq-ans-1">
+            <span>Can I bring a partner, friend, or +1?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div id="faq-ans-1" class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              This year’s Year-End Team Night is an exclusive gathering reserved for our internal team members, full-time staff, and active contractors. Because rooftop capacity on Level 12 is strictly limited, we are dedicating every seat to celebrating our collective team milestones together.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false" aria-controls="faq-ans-2">
+            <span>Will dietary requirements, vegan, and halal options be provided?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div id="faq-ans-2" class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Yes, absolutely. Our executive catering service includes dedicated vegetarian, vegan, halal-certified, and gluten-free culinary selections, along with clear allergen labeling. Please specify any dietary restrictions or severe allergies when completing your RSVP form so we can accommodate you personally.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false" aria-controls="faq-ans-3">
+            <span>What happens in case of rain or inclement weather?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div id="faq-ans-3" class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              The event will proceed seamlessly rain or shine! Level 12 features a fully weather-proof, climate-controlled glass sky pavilion equipped with overhead heaters that seamlessly connects to the outdoor terrace. In case of rain, all dining, awards, and entertainment will transition smoothly into the enclosed pavilion.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button" aria-expanded="false" aria-controls="faq-ans-4">
+            <span>Where can I park, and will ride-share vouchers be provided?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div id="faq-ans-4" class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Complimentary validated parking is available in the Building B subterranean garage (entrance on 4th Avenue). Security will validate your ticket at the Level 12 check-in desk. Furthermore, to ensure everyone celebrates responsibly and gets home safely, a company ride-share promo code ($25 voucher) will be emailed to all registered attendees on the morning of the event.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: RSVP SECTION WITH BIG BUTTON -->
+  <section id="rsvp">
+    <div class="container">
+      <div class="rsvp-card">
+        <div class="section-kicker">Reserve Your Seat</div>
+        <h2 class="rsvp-headline">
+          Ready to Celebrate <span class="gold-gradient-text">Our Best Year Yet?</span>
+        </h2>
+        <p class="rsvp-subtext">
+          Join your colleagues on the rooftop for drinks, dining, awards, and memories. Please confirm your attendance so our catering and event team can finalize headcounts.
+        </p>
+
+        <!-- BIG RSVP BUTTON -->
+        <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn-rsvp-huge" id="rsvp-main-button" aria-label="Open RSVP Form on Google Forms (opens in new tab)">
+          <span>RSVP on Google Forms</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+
+        <!-- Helpful Details -->
+        <div class="rsvp-details-list">
+          <div class="rsvp-detail-item">
+            <!-- Checkmark Icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span>RSVP Deadline: <strong>Friday, 28 November</strong></span>
+          </div>
+
+          <div class="rsvp-detail-item">
+            <!-- Shield Icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Level 12 Check-in Badge Required</span>
+          </div>
+
+          <div class="rsvp-detail-item">
+            <!-- Glass Icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 22h8"></path>
+              <path d="M12 15v7"></path>
+              <path d="M5 3h14l-2 9a5 5 0 0 1-10 0Z"></path>
+            </svg>
+            <span>Open Bar & Dinner Included</span>
+          </div>
+        </div>
+
+        <!-- Add to Calendar helper -->
+        <div style="margin-top: 28px;">
+          <button id="add-to-cal-btn" type="button" class="btn-navy-outline" style="font-size: 0.875rem; padding: 10px 20px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Add to Calendar (.ics)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <span class="brand-spark" aria-hidden="true">&#10022;</span>
+        <span>Year-End Team Night</span>
+      </div>
+      <p style="margin-bottom: 16px; color: var(--text-soft);">
+        Friday 12 December · 6:00 pm to 10:00 pm · Office rooftop, Level 12
+      </p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#dress-code">Dress Code</a>
+        <a href="#faq">FAQ</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+      <p style="font-size: 0.8125rem; color: #64748b;">
+        &copy; 2026 Internal Team Events Committee. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- VANILLA JAVASCRIPT (NO FRAMEWORKS) -->
+  <script>
+    (function () {
+      'use strict';
+
+      // 1. COUNTDOWN TIMER
+      // Event: Friday 12 December, 6:00 pm (18:00:00)
+      // Calculate target date: Dec 12 of current year (or next year if passed)
+      const currentYear = new Date().getFullYear();
+      let eventDate = new Date(currentYear, 11, 12, 18, 0, 0); // Month is 0-indexed (11 = December)
+
+      // If the date has already passed for this year, schedule for next year
+      if (new Date().getTime() > eventDate.getTime()) {
+        eventDate = new Date(currentYear + 1, 11, 12, 18, 0, 0);
+      }
+
+      const daysEl = document.getElementById('days-val');
+      const hoursEl = document.getElementById('hours-val');
+      const minutesEl = document.getElementById('minutes-val');
+      const secondsEl = document.getElementById('seconds-val');
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = eventDate.getTime() - now;
+
+        if (diff <= 0) {
+          if (daysEl) daysEl.textContent = '00';
+          if (hoursEl) hoursEl.textContent = '00';
+          if (minutesEl) minutesEl.textContent = '00';
+          if (secondsEl) secondsEl.textContent = '00';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+        if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+        if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+        if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // 2. FAQ ACCORDION
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach((item) => {
+        const button = item.querySelector('.faq-question-btn');
+        if (!button) return;
+
+        button.addEventListener('click', function () {
+          const isCurrentlyActive = item.classList.contains('active');
+
+          // Optional: close other FAQ items for clean single-expanded presentation
+          faqItems.forEach((otherItem) => {
+            otherItem.classList.remove('active');
+            const otherBtn = otherItem.querySelector('.faq-question-btn');
+            if (otherBtn) {
+              otherBtn.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          if (!isCurrentlyActive) {
+            item.classList.add('active');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // 3. STICKY NAV SCROLL STYLING & ACTIVE LINK HIGHLIGHTING
+      const navbar = document.getElementById('navbar');
+      const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+      const sections = document.querySelectorAll('section[id]');
+
+      function handleScroll() {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Add shadow and dark backdrop when scrolled
+        if (navbar) {
+          if (scrollY > 30) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        }
+
+        // Active link tracking
+        let currentSectionId = '';
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.offsetHeight;
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            currentSectionId = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + currentSectionId) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+
+      // 4. MOBILE DRAWER NAVIGATION
+      const mobileToggle = document.getElementById('mobile-toggle');
+      const mobileDrawer = document.getElementById('mobile-drawer');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      function toggleMobileMenu(forceClose) {
+        if (!mobileDrawer) return;
+        const isOpen = forceClose ? false : !mobileDrawer.classList.contains('open');
+
+        if (isOpen) {
+          mobileDrawer.classList.add('open');
+          mobileDrawer.setAttribute('aria-hidden', 'false');
+          mobileToggle.setAttribute('aria-expanded', 'true');
+          if (hamburgerIcon) hamburgerIcon.style.display = 'none';
+          if (closeIcon) closeIcon.style.display = 'block';
+        } else {
+          mobileDrawer.classList.remove('open');
+          mobileDrawer.setAttribute('aria-hidden', 'true');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+          if (hamburgerIcon) hamburgerIcon.style.display = 'block';
+          if (closeIcon) closeIcon.style.display = 'none';
+        }
+      }
+
+      if (mobileToggle) {
+        mobileToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          toggleMobileMenu();
+        });
+      }
+
+      // Close mobile menu when clicking any nav link
+      mobileLinks.forEach((link) => {
+        link.addEventListener('click', function () {
+          toggleMobileMenu(true);
+        });
+      });
+
+      // Close mobile menu if clicked outside
+      document.addEventListener('click', function (e) {
+        if (mobileDrawer && mobileDrawer.classList.contains('open') && !navbar.contains(e.target)) {
+          toggleMobileMenu(true);
+        }
+      });
+
+      // 5. CALENDAR (.ICS) FILE GENERATION
+      const calBtn = document.getElementById('add-to-cal-btn');
+      if (calBtn) {
+        calBtn.addEventListener('click', function () {
+          const title = 'Year-End Team Night';
+          const description = 'Annual team celebration with welcome drinks, seated dinner, awards ceremony, team games, and 360 photo booth. Dress code: Smart casual, with a touch of gold.';
+          const location = 'Office rooftop, Level 12';
+          
+          // Formats for iCal (YYYYMMDDTHHmmssZ)
+          // 2026-12-12 18:00 to 22:00 local
+          const icsContent = [
+            'BEGIN:VCALENDAR',
+            'VERSION:2.0',
+            'PRODID:-//Internal Events//Year-End Team Night//EN',
+            'BEGIN:VEVENT',
+            'SUMMARY:' + title,
+            'DESCRIPTION:' + description,
+            'LOCATION:' + location,
+            'DTSTART:20261212T180000',
+            'DTEND:20261212T220000',
+            'STATUS:CONFIRMED',
+            'END:VEVENT',
+            'END:VCALENDAR'
+          ].join('\r\n');
+
+          const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', 'year-end-team-night.ics');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+        });
+      }
+
+    })();
+  </script>
+</body>
+</html>
